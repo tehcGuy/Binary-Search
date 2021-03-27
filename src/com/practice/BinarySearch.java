@@ -21,8 +21,8 @@ public class BinarySearch {
     }
 
     public void binarySearch() {
-        LinkedList<Integer> temp = new LinkedList<>(this.numbers); // value type
-        //        List<Integer> temp = this.numbers; // referencing type; points to the original list (store references to their data (objects))
+        LinkedList<Integer> temp = new LinkedList<>(this.numbers); // object copy
+        //        List<Integer> temp = this.numbers; // reference copy; points to the original list (store references to their data (objects))
 
         Collections.sort(temp); // binary search requires the sorted data
         System.out.print("Enter the a number which you want to check whether it is present ");
